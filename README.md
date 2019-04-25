@@ -49,9 +49,11 @@ gmalg.c文件即可
 
 1，进入testing/tests/gmalg/ipsec_cert目录，运行sm2.sh命令，生成所需的所有证书，包括客户端和主机端运行local.sh 加载文件到所需目录，这里注意，只生成一次，客户端和主机端加载的ca证书相同，不然验证不过；
 
-   2，在服务端：运行src/libstrongswan/plugins/gmalg 目录下的init_server.sh脚本，初始化环境 /// strongswan/testing/tests/gmalg
-   3，在客户端：运行src/libstrongswan/plugins/gmalg 目录下的init_client.sh脚本，初始化环境 /// /strongswan/testing/tests/gmalg
-   4，两端同时运行运行src/libstrongswan/plugins/gmalg 目录下的run.sh脚本，启动软件
+2，在服务端：运行src/libstrongswan/plugins/gmalg 目录下的init_server.sh脚本，初始化环境 /// strongswan/testing/tests/gmalg
+
+3，在客户端：运行src/libstrongswan/plugins/gmalg 目录下的init_client.sh脚本，初始化环境 /// /strongswan/testing/tests/gmalg
+
+4，两端同时运行运行src/libstrongswan/plugins/gmalg 目录下的run.sh脚本，启动软件
 
 ipsec规则设置：修改testing/tests/gmalg/swanctl目录里的ip地址，即可实际配置
 
