@@ -5,7 +5,9 @@
 0.安装编译所需的工具。
 
 sudo apt-get install gcc automake autoconf libtool pkg-config gettext perl python flex bison gperf lcov doxygen
+
 sudo apt-get install autoconf autogen
+
 sudo apt-get install libgmp-dev  //用如下命令安装下gmp就解决了：configure: error: GNU Multi Precision library gmp not found
 
 更新openssl 至 3.0 ：
