@@ -1,4 +1,14 @@
 ﻿# strongSwan Configuration #
+ 
+ //安装：
+ 0.安装编译所需的工具。
+sudo apt-get install gcc automake autoconf libtool pkg-config gettext perl python flex bison gperf lcov doxygen
+sudo apt-get install autoconf autogen
+sudo apt-get install libgmp-dev  //用如下命令安装下gmp就解决了：configure: error: GNU Multi Precision library gmp not found
+
+更新openssl 至 3.0 ：
+参照 ：https://blog.csdn.net/qq_33182756/article/details/75333134
+
 
 ## Overview ##
 
@@ -25,9 +35,13 @@ gmalg.c文件即可
 
 编译软件：
     1，在strongswan目录运行autogen.sh命令。生成configuie命令
+    
     2，在主机的根系统上创建 /ipsec 目录，添加权限 chmod 777 /ipsec
+    
     3，在strongswan目录运行autogen.sh命令。配置，编译及安装strongswan
+    
     4，将/ipsec目录打包拷贝到server和client上，必须解压到根目录，比如pki命令， /ipsec/bin/pki
+    
     5，尽量不要用软件默认路径安装，便于删除和更新
 
 测试脚本在testing/tests/gmalg目录，测试步骤如下：
