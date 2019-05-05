@@ -10,8 +10,10 @@ sudo apt-get install autoconf autogen
 
 sudo apt-get install libgmp-dev  //用如下命令安装下gmp就解决了：configure: error: GNU Multi Precision library gmp not found
 
-更新openssl 至 3.0 ：
+更新openssl 至 1.1.1 ：
 参照 ：https://blog.csdn.net/qq_33182756/article/details/75333134
+
+配置时，注意testing/tests/gmalg/swanctl 里的 .conf配置（包含 IP 、CN= ×××） testing/tests/gmalg/ip_sec 里的 sm2.sh 里面的生成中 IP 和 CN
 
 
 ## Overview ##
