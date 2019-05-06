@@ -15,6 +15,8 @@ sudo apt-get install libgmp-dev  //用如下命令安装下gmp就解决了：con
 
 配置时，注意testing/tests/gmalg/swanctl 里的 .conf配置（包含 IP 、CN= ×××） testing/tests/gmalg/ip_sec 里的 sm2.sh 里面的生成中 IP 和 CN
 
+在/strongswan/ 目录下 的 build.sh 中 有 一段  “ /configure   --prefix=/ipsec --host=arm-linux \ ” ，注意自己是否需要交叉编译， 不用的话可以删掉 --host
+
 
 ## Overview ##
 
